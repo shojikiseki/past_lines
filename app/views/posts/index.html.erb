@@ -1,6 +1,25 @@
-<h1>LINE@</h1>
+<div id="main">
 
-<% @posts.each.with_index(1) do |post, index| %>
-  <p><%= index %></p>
-  <p><%= link_to post.title, post_path(post), taeget: '_blank' %></p>
-<% end %>
+  <!-- posts -->
+  <section id="posts" class="site-width">
+    <h1 class="title">LINE@</h1>
+
+    <table class="table table-striped" align="center">
+      <thead>
+        <tr>
+          <th>番号</th>
+          <th>タイトル</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @posts.each.with_index(1) do |post, index| %>
+          <tr>
+            <th><%= index %></th>
+            <th><%= link_to post.title, post_path(post), taeget: '_blank' %></th>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </section>
+
+</div>

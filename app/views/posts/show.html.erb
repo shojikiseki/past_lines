@@ -1,3 +1,9 @@
-<h1><%= @post.title %></h1>
+<div id="main">
 
-<%= markdown(@post.content).html_safe %>
+  <!-- post -->
+  <section id="line-contents" class="site-width">
+    <h1 class="title"><%= @post.title %></h1>
+    <%= markdown(@post.content).html_safe %>
+    <%= link_to '一覧に戻る', posts_path, class: 'btn' %>
+  </section>
+</div>

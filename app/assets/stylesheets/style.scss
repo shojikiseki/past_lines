@@ -1,0 +1,60 @@
+body{
+  color: #444;
+  margin: 0;
+  padding: 0;
+  line-height: 150%;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  width: 980px;
+  margin: 100px auto;
+}
+
+/* 投稿一覧 */
+.site-width {
+  width: 70%;
+  margin: 0 auto;
+}
+
+section h1.title{
+  margin: 100px auto;
+  text-align: center;
+}
+
+.table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.table tr{
+  border-bottom: solid 1px #eee;
+  cursor: pointer;
+}
+
+.table tr:hover{
+  background-color: #d4f0fd;
+}
+
+.table th, .table td{
+  text-align: center;
+  padding: 15px 0;
+}
+
+
+/* 投稿詳細 */
+#line-contents p{
+  line-height: 250%;
+}
+
+#line-contents a.btn{
+  background: #333;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  float: right;
+}
