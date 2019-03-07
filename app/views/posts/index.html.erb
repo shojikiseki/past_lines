@@ -1,0 +1,6 @@
+<h1>LINE@</h1>
+
+<% @posts.each.with_index(1) do |post, index| %>
+  <p><%= index %></p>
+  <p><%= link_to post.title, post_path(post), taeget: '_blank' %></p>
+<% end %>
